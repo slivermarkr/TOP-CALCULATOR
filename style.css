@@ -51,14 +51,14 @@ body{
 
 }
 .current {
-    font-size: 40px;
+    font-size: 55px;
     color: antiquewhite;
     max-height: 90px;
     overflow: hidden;
     font-weight:200;
 }
 .previous {
-    font-size: 25px;
+    font-size: 35px;
     color: rgba(255, 255, 255, .75);
     max-height: 30px;
 }
