@@ -1,0 +1,87 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.calculator{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    border: 10px solid  rgba(0, 0, 0, .75);
+    border-radius: 15px;
+    background-color: bisque;
+    padding: 10px;
+}
+.calculator .first-row,.second-row,.third-row,.fourth-row,.fifth-row{
+    width: inherit;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+ button {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .75);
+    color:  rgba(0, 0, 0, .75);
+    font-size: 20px;
+    font-weight: 900;
+    border-color: #6875eb;
+}
+.screen{
+    width: inherit;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 15px;
+    border: solid rgb(228, 20, 20) 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+.current {
+    font-size: 40px;
+    color: antiquewhite;
+    max-height: 90px;
+    overflow: hidden;
+    font-weight:200;
+}
+.previous {
+    font-size: 25px;
+    color: rgba(255, 255, 255, .75);
+    max-height: 30px;
+}
+.hlcolor {
+    color: orangered;
+}
+button:hover{
+    background-color: rgba(170, 164, 164, 0.699);
+    color: rgba(255, 255, 255, 0.555);
+}
+.hlcolor:hover {
+    background-color: rgba(179, 160, 137, 0.842);
+    color: rgb(165, 111, 12);
+}
+body {
+    background: linear-gradient(to right,rgb(50, 146, 235), #6875eb)
+}
+.first-row :nth-child(1) {
+    flex: 1;
+}
+.fifth-row :nth-child(3){
+    flex: 1;
+}
+.ops{
+    font-size: 28px;
+}
